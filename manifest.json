@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Unload on Demand",
+  "version": "1.0.0",
+  "homepage_url": "https://github.com/bydrim/unload-on-demand",
+  "description": "Browser add-on (extension) to unload tabs at once.",
+  "developer": {
+    "name": "bydrim",
+    "url": "https://bydrim.com"
+  },
+  "permissions": ["tabs", "contextMenus"],
+  "background": {
+    "scripts": ["events.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "unload-on-demand@bydrim.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "incognito": "not_allowed"
+}
